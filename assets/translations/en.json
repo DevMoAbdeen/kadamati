@@ -1,0 +1,38 @@
+{
+  "TextFieldsValues": {
+    "name": "Full Name",
+    "email": "Email",
+    "mobile": "Mobile Number",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "type": "Type Account"
+  },
+
+  "ButtonValues": {
+    "login": "Login",
+    "signup": "Signup"
+  },
+
+  "TextFieldsValidator": {
+    "empty_name": "Your name can't be empty",
+    "invalid_name": "Enter valid name just contain characters",
+    "invalid_full_name": "Write your full name!",
+    "empty_email": "Email can't be empty",
+    "invalid_email": "Enter valid email",
+    "short_password": "Password must be at least 6 characters",
+    "weak_password": "Write Strong password contains small and capital letters, numbers and symbol",
+    "not_confirmation_password": "The password confirmation doesn't match"
+  },
+
+  "ErrorValues": {
+    "server_failure": "Server not good, Please try again later",
+    "internet_failure": "Please check your internet connection",
+    "timeout_failure": "The time is finish and no data return, Check your Internet connection and try again",
+    "operation_not_allowed_failure": "This operation not allowed for you, try logout and then login",
+    "wrong_input_failure": "The password is wrong, or No user found for this email",
+    "unauthorised_failure": "The user not logged, try logout and then login",
+    "cache_failure": "Error while Cache value",
+    "empty_cache_failure": "No Internet connection and No data cached before",
+    "unexpected_failure": "Unexpected error, please try again later.."
+  }
+}

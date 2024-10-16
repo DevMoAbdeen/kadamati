@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'core/constants/app_themes.dart';
+import 'core/routing/app_routes.dart';
+import 'core/routing/router_list.dart';
 
 void main() {
   runApp(const KadamatiApp());
@@ -12,7 +15,12 @@ class KadamatiApp extends StatelessWidget {
     return MaterialApp(
       title: "Kadamati",
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      theme: AppThemes.lightTheme,
+      darkTheme: AppThemes.darkTheme,
+      initialRoute: RouterList.splashScreen,
+      onGenerateRoute: AppRouter.generateRoute,
     );
+
+
   }
 }
