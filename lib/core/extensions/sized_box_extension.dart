@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-extension SizedBoxExtensions on double {
+extension SizedBoxExtensions on num {
   SizedBox heightSpace() => SizedBox(
-    height: this,
+    height: double.parse(toString()),
   );
 
   SizedBox widthSpace() => SizedBox(
-    width: this,
+    width: double.parse(toString()),
   );
 }

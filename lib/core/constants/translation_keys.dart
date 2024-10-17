@@ -31,4 +31,27 @@ abstract class TranslationKeys {
   static const String cacheFailure = "ErrorValues.cache_failure";
   static const String emptyCacheFailure = "ErrorValues.empty_cache_failure";
   static const String unexpectedFailure = "ErrorValues.unexpected_failure";
+
+  /// Screens
+
+  // Splash Screen
+  static const String appName = "Screens.Splash.app_name";
+
+  // Onboarding Screen
+  static const String skip = "Screens.Onboarding.skip";
+  static const String exploreName = "Screens.Onboarding.Explore.name";
+  static const String exploreTitle = "Screens.Onboarding.Explore.title";
+  static const String exploreDescription = "Screens.Onboarding.Explore.description";
+  static const String postName = "Screens.Onboarding.Post.name";
+  static const String postTitle = "Screens.Onboarding.Post.title";
+  static const String postDescription = "Screens.Onboarding.Post.description";
+  static const String shareName = "Screens.Onboarding.Share.name";
+  static const String shareTitle = "Screens.Onboarding.Share.title";
+  static const String shareDescription = "Screens.Onboarding.Share.description";
+  static const String connectName = "Screens.Onboarding.Connect.name";
+  static const String connectTitle = "Screens.Onboarding.Connect.title";
+  static const String connectDescription = "Screens.Onboarding.Connect.description";
+  static const String ratingsName = "Screens.Onboarding.Ratings.name";
+  static const String ratingsTitle = "Screens.Onboarding.Ratings.title";
+  static const String ratingsDescription = "Screens.Onboarding.Ratings.description";
 }

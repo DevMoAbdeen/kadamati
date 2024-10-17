@@ -34,5 +34,41 @@
     "cache_failure": "Error while Cache value",
     "empty_cache_failure": "No Internet connection and No data cached before",
     "unexpected_failure": "Unexpected error, please try again later.."
+  },
+
+  "Screens": {
+    "Splash": {
+      "app_name": "Kadamati"
+    },
+
+    "Onboarding": {
+      "skip": "Skip",
+
+      "Explore": {
+        "name": "Explore Services",
+        "title": "Discover Services Around You",
+        "description": "Browse a wide variety of services offered by local professionals. Find exactly what you need with our intuitive search filters."
+      },
+      "Post": {
+        "name": "Post Your Work",
+        "title": "Showcase Your Skills",
+        "description": "As a service provider, post examples of your work for potential clients to see and appreciate. Attract more business with visually appealing posts."
+      },
+      "Share": {
+        "name": "Share Posts Easily",
+        "title": "Share Services with Others",
+        "description": "Found a post or service you want to recommend? Share it easily by copying the link. When someone clicks on the link, they’ll be directed straight to the post or service within the app."
+      },
+      "Connect": {
+        "name": "Connect with Providers",
+        "title": "Contact Service Providers Easily",
+        "description": "Reach out to service providers directly through the app. Discuss details, ask questions, and book their services effortlessly."
+      },
+      "Ratings": {
+        "name": "Ratings & Reviews",
+        "title": "Trustworthy Feedback",
+        "description": "Check ratings and read reviews before making decisions. Leave your own feedback after using a service to help others in the community."
+      }
+    }
   }
 }

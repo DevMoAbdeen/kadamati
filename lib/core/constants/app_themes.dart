@@ -7,21 +7,22 @@ abstract class AppThemes {
     brightness: Brightness.light,
     primaryColor: AppColors.mainColorLight,
     scaffoldBackgroundColor: AppColors.backgroundColorLight,
-    iconTheme: const IconThemeData(color: AppColors.iconColorLight),
     textTheme: const TextTheme(
       bodyLarge: TextStyle(color: AppColors.textColorLight),
       bodyMedium: TextStyle(color: AppColors.unselectedTextColorLight),
-      bodySmall: TextStyle(color: AppColors.unselectedTextColorLight),
     ),
     snackBarTheme: const SnackBarThemeData(
-      backgroundColor: AppColors.successSnackBarColorLight,
+      backgroundColor: AppColors.successSnackBarColor,
       contentTextStyle: TextStyle(color: Colors.white),
     ),
     appBarTheme: const AppBarTheme(
       backgroundColor: AppColors.mainColorLight,
       iconTheme: IconThemeData(color: Colors.white),
-      titleTextStyle: TextStyle(color: Colors.white, fontSize: 18),
     ),
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: AppColors.mainColorLight,
+    ),
+    dividerColor: Colors.grey,
   );
 
   // Dark Theme Data
@@ -29,19 +30,21 @@ abstract class AppThemes {
     brightness: Brightness.dark,
     primaryColor: AppColors.mainColorDark,
     scaffoldBackgroundColor: AppColors.backgroundColorDark,
-    iconTheme: const IconThemeData(color: AppColors.iconColorDark),
     textTheme: const TextTheme(
       bodyLarge: TextStyle(color: AppColors.textColorDark),
       bodyMedium: TextStyle(color: AppColors.unselectedTextColorDark),
     ),
     snackBarTheme: const SnackBarThemeData(
-      backgroundColor: AppColors.successSnackBarColorDark,
+      backgroundColor: AppColors.successSnackBarColor,
       contentTextStyle: TextStyle(color: Colors.white),
     ),
     appBarTheme: const AppBarTheme(
       backgroundColor: AppColors.mainColorDark,
       iconTheme: IconThemeData(color: Colors.white),
-      titleTextStyle: TextStyle(color: Colors.white, fontSize: 18),
     ),
+    floatingActionButtonTheme: const FloatingActionButtonThemeData(
+      backgroundColor: AppColors.mainColorDark,
+    ),
+    dividerColor: Colors.grey,
   );
 }

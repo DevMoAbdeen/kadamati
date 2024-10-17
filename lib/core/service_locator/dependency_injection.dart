@@ -23,21 +23,4 @@ Future<void> setupServiceLocator() async {
 
   ///////////////////////////////////////////////////////////////////
 
-  /// Features (Languages)
-  // Cubits //
-  // getIt.registerFactory(() => LanguageCubit(getCurrentLanguageUseCase: getIt(), changeLanguageUseCase: getIt()));
-  //
-  // // UseCases //
-  // getIt.registerLazySingleton(() => GetCurrentLanguageUseCase(getIt()));
-  // getIt.registerLazySingleton(() => ChangeLanguageUseCase(getIt()));
-  //
-  // // Repository //
-  // getIt.registerLazySingleton<LanguageRepository>(() => LanguageRepositoryImpl(languageDataSource: getIt()));
-  //
-  // // DataSources //
-  // getIt.registerLazySingleton<LanguagesLocalDataSource>(() =>
-  //     LanguagesLocalDataSourceImplWithSharedPref());
-
-  ///////////////////////////////////////////////////////////////////
-
 }

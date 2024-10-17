@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../features/onboarding/presentation/screens/onboarding_screen.dart';
 import '../../features/splash/presentation/screens/splash_screen.dart';
 import '../app_widgets/app_text.dart';
 import '../constants/app_colors.dart';
@@ -7,12 +7,15 @@ import 'router_list.dart';
 
 abstract class AppRouter {
 
-  static List<String> getSupportedLanguages = ["en", "ar"];
+  static List<String> supportedLanguages = ["en", "ar"];
 
   static Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case RouterList.splashScreen:
-        return _buildRoute(settings, screen: const SplashScreen());
+        return _buildRoute(settings, builder: const SplashScreen());
+
+      case RouterList.onboardingScreen:
+        return _buildRoute(settings, builder: const OnboardingScreen());
 
       default:
         return _errorRoute(settings.name ?? "null");
@@ -21,17 +24,14 @@ abstract class AppRouter {
 
   static MaterialPageRoute _buildRoute(
     RouteSettings settings, {
-    required Widget screen,
-    Cubit? cubit,
+    required Widget builder,
     maintainState = true,
     fullscreenDialog = false,
     allowSnapshotting = true,
     barrierDismissible = false,
   }) {
     return MaterialPageRoute(
-      builder: (_) => cubit != null
-          ? BlocProvider(create: (context) => cubit, child: screen)
-          : screen,
+      builder: (context) => builder,
       settings: settings,
       maintainState: maintainState,
       fullscreenDialog: fullscreenDialog,
